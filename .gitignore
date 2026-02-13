@@ -1,0 +1,175 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+.env
+.env.*
+
+# Node modules and dependencies
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Expo
+.expo/
+web-build/
+dist/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Metro bundler
+.metro-health-check*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Native builds (Expo prebuild)
+ios/Pods/
+ios/build/
+ios/Podfile.lock
+ios/Viciniti.xcworkspace/xcuserdata/
+ios/*.xcuserdatad/
+ios/.xcode.env.local
+ios/GoogleService-Info.plist
+
+android/app/build/
+android/build/
+android/captures/
+android/local.properties
+android/keystore.properties
+android/.gradle/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+android/*.hprof
+android/*.keystore
+android/app/debug
+android/app/release
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.meta
+android/app/src/main/res/raw/
+android/google-services.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+.factorypath
+.editorconfig
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.jest/
+jest-*
+__tests__/__snapshots__/
+
+# Caching
+.eslintcache
+.babel-cache
+
+# Firebase
+firebase-debug.log
+firebase-debug.*.log
+.firebase/
+
+# Misc
+.watchmanconfig
+*.log
+*.log.*
+.vercel
+.next
+.cache/
+dist/
+.sourcemaps/
+.tmp/
+*.tgz
+
+# Mapbox specific - don't commit tokens
+src/utils/mapbox.private.ts
+
+# Backup configuration files
+*.backup
+*.backup.*
+app.json.backup

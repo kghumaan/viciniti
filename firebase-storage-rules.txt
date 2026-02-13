@@ -1,0 +1,22 @@
+// Copy these rules into your Firebase Storage console
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Default rule - deny access
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+    
+    // Allow write access to beacon_images folder
+    match /beacon_images/{imageId} {
+      allow read: if true; // Anyone can read beacon images
+      allow write: if request.auth != null; // Only authenticated users can upload
+    }
+    
+    // Allow read access to user profile images
+    match /user_images/{userId} {
+      allow read: if true; // Anyone can read profile images
+      allow write: if request.auth != null && request.auth.uid == userId; // Only the user can upload their own image
+    }
+  }
+}
